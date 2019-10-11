@@ -19,16 +19,18 @@ class SearchingAndSortingTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testBinarySearch() {
+        // Test cases
+        let testArray = [1, 3, 9, 11, 15, 19, 29]
+        let testVal1 = 25
+        let testVal2 = 15
+        //print(binarySearch(testArray, value: testVal1)) // Should be nil
+        print(binarySearch(testArray, value: testVal2)!) // Should be 4
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testRecursive() {
+        let recObj = Recursion()
+        let result = recObj.getFib(4)
     }
 
 }
