@@ -21,11 +21,23 @@ class SearchingAndSortingTests: XCTestCase {
 
     func testBinarySearch() {
         // Test cases
-        let testArray = [1, 3, 9, 11, 15, 19, 29]
+        let testArray = [1, 3, 9, 11, 15, 19, 25]
         let testVal1 = 25
         let testVal2 = 15
-        //print(binarySearch(testArray, value: testVal1)) // Should be nil
-        print(binarySearch(testArray, value: testVal2)!) // Should be 4
+        
+        XCTAssertEqual(binarySearch(testArray, value: 25), 6)
+        XCTAssertEqual(binarySearch(testArray, value: 15), 4)
+        XCTAssertEqual(binarySearch(testArray, value: 1), 0)
+        XCTAssertEqual(binarySearch(testArray, value: 11), 3)
+        XCTAssertEqual(binarySearch(testArray, value: 29), nil)
+        XCTAssertEqual(binarySearch(testArray, value: 20), nil)
+        XCTAssertEqual(binarySearch(testArray, value: 0), nil)
+
+
+
+
+//        print(binarySearch(testArray, value: testVal1)) // Should be nil
+//        print(binarySearch(testArray, value: testVal2)!) // Should be 4
     }
     
     func testRecursive() {
