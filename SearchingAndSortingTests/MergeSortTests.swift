@@ -27,8 +27,8 @@ class MergeSortTests: XCTestCase {
         let array3 = [10,14,13]
         let array4 = [1,1,1,1,1,1,1,1,1,1]
         
-        let result = mergeSort(array: array4)
-        XCTAssert(result == array4.sorted(), "Failed sorting")
+        let result = mergeSort(array: array2)
+        XCTAssert(result == array2.sorted(), "Failed sorting")
         
     }
 
